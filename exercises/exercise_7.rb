@@ -10,3 +10,12 @@ puts "Exercise 7"
 puts "----------"
 
 # Your code goes here ...
+
+puts "Enter store name: >>"
+newstore = Store.new(name: "#{gets.chomp}")
+
+puts newstore.name
+
+newstore.save
+
+puts newstore.errors.messages
